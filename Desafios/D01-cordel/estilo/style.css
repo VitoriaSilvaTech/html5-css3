@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Roboto', sans-serif;
+    --fonte3: 'Indie Flower', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh; 
+    /* Esse aqui é o tamanho minimo do meu html, que também poderia ser declarado como 100%*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+/*ESTILO HEADER*/
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px; /*espaçamento da parte de cima*/
+    font-variant: small-caps; 
+    /*Para deixar as letras em maiusculas, mas com as inicias maiores. Diferente do UPPERCASE, que todas ficam maiusculas de forma igual*/
+    font-family: var(--fonte2);
+    font-size: 3rem;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder; /*negrito*/
+}
+
+a:hover {
+    text-decoration: underline; 
+    /*para virar um sublinhado quando passar o mouse por cima*/
+}
+/*PARA AS DUAS SECTION*/
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento entre as linhas*/
+    padding-left: 30px; /*espaçamento da esquerda para direita do site*/
+    font-family: var(--fonte3);
+    font-size: 1.5rem;
+}
+
+/*SECTION NORMAL*/
+
+section.normal {
+    background-color: white;
+    color: black;
+    font-weight: 300;
+}
+
+/*SECTION IMAGEM*/
+   
+section.imagem {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+section.imagem > p {
+    display: inline-block; /*caixa que se adapta ao tamanho do conteudo*/
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 5px;
+}
+
+/*RODA PÉ DO SITE*/
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
